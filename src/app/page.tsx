@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <div className={'text-red-500'}>
-      <Button>hello world</Button>
+      <Button variant={'ghost'}>hello world</Button>
     </div>
   )
 }
