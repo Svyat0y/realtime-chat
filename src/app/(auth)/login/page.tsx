@@ -2,9 +2,9 @@
 
 import {Button} from "@/components/ui/Button";
 import {useState} from "react";
-import {Icon} from "@/components/icon";
 import {signIn} from "next-auth/react";
 import toast from "react-hot-toast";
+import { Icons } from "@/components/icon";
 
 const Login = () => {
 	const [isLoading, setIsLoading] = useState(false)
@@ -39,7 +39,7 @@ const Login = () => {
 						type='button'
 						className='max-w-sm mx-auto w-full'
 						onClick={loginWithGoogle}>
-						{!isLoading ? <Icon type='GOOGLE'/> : null}
+						{!isLoading ? <Icons.Google/> : null}
 						Google
 					</Button>
 				</div>
